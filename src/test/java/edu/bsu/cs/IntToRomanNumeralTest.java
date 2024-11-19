@@ -18,6 +18,31 @@ public class IntToRomanNumeralTest {
     }
 
     @Test
+    void testConvert10() {
+        assertEquals("X", convert.convertToRomanNumeral(10));
+    }
+
+    @Test
+    void testConvert50() {
+        assertEquals("L", convert.convertToRomanNumeral(50));
+    }
+
+    @Test
+    void testConvert100() {
+        assertEquals("C", convert.convertToRomanNumeral(100));
+    }
+
+    @Test
+    void testConvert500() {
+        assertEquals("D", convert.convertToRomanNumeral(500));
+    }
+
+    @Test
+    void testConvert1000() {
+        assertEquals("M", convert.convertToRomanNumeral(1000));
+    }
+
+    @Test
     void testLowerBound() {
         assertEquals("Not valid input", convert.convertToRomanNumeral(0));
     }
