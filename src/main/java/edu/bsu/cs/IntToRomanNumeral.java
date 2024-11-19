@@ -2,8 +2,8 @@ package edu.bsu.cs;
 
 public class IntToRomanNumeral {
     public String convertToRomanNumeral(int givenNumber) {
-        int[] integers = {1, 5, 10, 50, 100, 500, 1000};
-        String[] romanNumerals = {"I", "V", "X", "L", "C", "D", "M"};
+        int[] integers = {1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000};
+        String[] romanNumerals = {"I", "IV", "V", "IX", "X", "XL", "L", "XC", "C", "CD", "D", "CM", "M"};
 
         if (givenNumber < 1 || givenNumber > 3000) {
             return "Not valid input";
