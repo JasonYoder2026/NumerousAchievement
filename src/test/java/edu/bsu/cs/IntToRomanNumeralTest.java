@@ -13,6 +13,11 @@ public class IntToRomanNumeralTest {
     }
 
     @Test
+    void testConvert3() {
+        assertEquals("III", convert.convertToRomanNumeral(3));
+    }
+
+    @Test
     void testConvert4() {
         assertEquals("IV", convert.convertToRomanNumeral(4));
     }
@@ -23,6 +28,11 @@ public class IntToRomanNumeralTest {
     }
 
     @Test
+    void testConvert8() {
+        assertEquals("VIII", convert.convertToRomanNumeral(8));
+    }
+
+    @Test
     void testConvert9() {
         assertEquals("IX", convert.convertToRomanNumeral(9));
     }
@@ -30,6 +40,11 @@ public class IntToRomanNumeralTest {
     @Test
     void testConvert10() {
         assertEquals("X", convert.convertToRomanNumeral(10));
+    }
+
+    @Test
+    void testConvert25() {
+        assertEquals("XXV", convert.convertToRomanNumeral(25));
     }
 
     @Test

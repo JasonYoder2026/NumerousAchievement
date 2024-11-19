@@ -8,11 +8,16 @@ public class IntToRomanNumeral {
         if (givenNumber < 1 || givenNumber > 3000) {
             return "Not valid input";
         }
+
+        StringBuilder romanNumeral = new StringBuilder();
+
         for (int i = integers.length-1; i >= 0; i--) {
-            if(givenNumber == integers[i]) {
-                return romanNumerals[i];
+            while (givenNumber >= integers[i]) {
+                givenNumber -= integers[i];
+                romanNumeral.append(romanNumerals[i]);
             }
         }
-        return null;
+
+        return romanNumeral.toString();
     }
 }
