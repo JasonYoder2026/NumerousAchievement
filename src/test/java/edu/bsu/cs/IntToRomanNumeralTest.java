@@ -21,4 +21,9 @@ public class IntToRomanNumeralTest {
     void testLowerBound() {
         assertEquals("Not valid input", convert.convertToRomanNumeral(0));
     }
+
+    @Test
+    void testUpperBound() {
+        assertEquals("Not valid input", convert.convertToRomanNumeral(3001));
+    }
 }
